@@ -27,7 +27,7 @@ nav a {
 }
 
 nav a:hover {
-  box-shadow: 5px 4px 2px cyan;
+  box-shadow: 5px 4px 2px #bc5a58;
 }
 
 div.app-container {

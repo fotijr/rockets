@@ -3,6 +3,16 @@ div.spec > label {
     margin-right: 3px;
 }
 
+.spec > span{
+    min-width: 85px;
+    text-align: right;
+    display: inline-block;
+}
+
+span.unit{
+    color: gray;
+}
+
 .rocket {
     display: inline-block;
     margin: 0 15px 15px 0;
@@ -15,9 +25,15 @@ div.spec > label {
     color: #fff;
     margin: 0;
     padding: 20px 15px;
+    letter-spacing: 1.5px;
+    text-align: center;
 }
 
 .rocket a {
     text-decoration: none;
     color: #fff;
+}
+
+.rocket-body {
+    padding: 10px;
 }

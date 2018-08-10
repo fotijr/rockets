@@ -7,10 +7,18 @@
       </h4>
       <div class="rocket-body">
         <div class="spec">
-          <label>LEO</label> {{rocket.config[0].leo}}
+          <label>LEO</label>
+          <span>
+            {{rocket.config[0].leo | number}}
+            <span class="unit">kg</span>
+          </span>
         </div>
         <div class="spec">
-          <label>GTO</label> {{rocket.config[0].gto}}
+          <label>GTO</label>
+          <span>
+            {{rocket.config[0].gto | number}}
+            <span class="unit">kg</span>
+          </span>
         </div>
       </div>
     </div>

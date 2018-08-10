@@ -1,4 +1,4 @@
-# Rockets
+# Rockets [![Build Status](https://travis-ci.org/fotijr/rockets.svg?branch=master)](https://travis-ci.org/fotijr/rockets)
 A demo Angular app showing awesome rockets. View the site [here](https://rockets.fotijr.com/). Art by [@basicavisual](https://twitter.com/basicavisual).
 
 

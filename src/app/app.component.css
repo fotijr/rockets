@@ -8,6 +8,7 @@ nav {
   flex-grow: 1;
   max-width: 130px;
   padding: 10px 20px;
+  min-height: 100vh;
 }
 
 nav h3 {
@@ -42,4 +43,5 @@ div.app-content {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  padding-bottom: 40px;
 }

@@ -13,8 +13,7 @@ nav {
 
 @media only screen and (max-width: 520px) {
   nav {
-    flex-direction: row;
-    max-width: 100%;
+    /* TODO: mobile navbar here */
   }
 }
 

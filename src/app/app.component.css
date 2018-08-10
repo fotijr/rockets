@@ -1,0 +1,45 @@
+nav {
+  background-color: #000;
+  color: #fff;
+  margin-right: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 130px;
+  padding: 10px 20px;
+}
+
+nav h3 {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 25px;
+}
+
+nav a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 15px 10px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+}
+
+nav a:hover {
+  box-shadow: 5px 4px 2px cyan;
+}
+
+div.app-container {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  height: 100%;
+}
+
+div.app-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

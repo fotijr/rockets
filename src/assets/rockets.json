@@ -1,0 +1,136 @@
+{
+    "rockets": [
+        {
+            "id": "falcon-9",
+            "name": "Falcon 9",
+            "operator": "SpaceX",
+            "fuel": "Chilled RP-1 / Subcooled LOX",
+            "config": [
+                {
+                    "name": "reusable",
+                    "cost": 0,
+                    "leo": 14820,
+                    "gto": 5500
+                },
+                {
+                    "name": "expendable",
+                    "cost": 0,
+                    "leo": 22800,
+                    "gto": 8300
+                }
+            ],
+            "img": {
+                "url": "",
+                "credit": {
+                    "name": "",
+                    "url": ""
+                }
+            }
+        },
+        {
+            "id": "falcon-heavy",
+            "name": "Falcon Heavy",
+            "operator": "SpaceX",
+            "fuel": "Chilled RP-1 / Subcooled LOX",
+            "config": [
+                {
+                    "name": "reusable",
+                    "cost": 95,
+                    "leo": 43500,
+                    "gto": 8000
+                },
+                {
+                    "name": "expendable",
+                    "cost": 150,
+                    "leo": 63800,
+                    "gto": 26700,
+                    "tmi": 16800
+                }
+            ],
+            "img": {
+                "url": "",
+                "credit": {
+                    "name": "",
+                    "url": ""
+                }
+            }
+        },
+        {
+            "id": "delta-iv",
+            "name": "Delta IV",
+            "operator": "ULA",
+            "fuel": "LH₂ / LOX",
+            "config": [
+                {
+                    "name": "M+(4,2)",
+                    "cost": 0,
+                    "leo": 13140,
+                    "gto": 6390,
+                    "polar": 10250
+                },
+                {
+                    "name": "M+(5,4)",
+                    "cost": 0,
+                    "leo": 14140,
+                    "gto": 7300,
+                    "polar": 11600
+                },
+                {
+                    "name": "heavy",
+                    "cost": 400,
+                    "leo": 28790,
+                    "gto": 14220,
+                    "polar": 23560
+                }
+            ],
+            "img": {
+                "url": "",
+                "credit": {
+                    "name": "",
+                    "url": ""
+                }
+            }
+        },
+        {
+            "id": "electron",
+            "name": "Electron",
+            "operator": "Rocket Lab",
+            "fuel": "RP-1 / LOX",
+            "config": [
+                {
+                    "name": "expendable",
+                    "cost": 0,
+                    "leo": 225
+                }
+            ],
+            "img": {
+                "url": "",
+                "credit": {
+                    "name": "",
+                    "url": ""
+                }
+            }
+        },
+        {
+            "id": "space-shuttle",
+            "name": "Space Shuttle",
+            "operator": "NASA",
+            "fuel": "LH₂ / LOX",
+            "config": [
+                {
+                    "name": "reusable",
+                    "cost": 0,
+                    "leo": 24400,
+                    "gto": 4944
+                }
+            ],
+            "img": {
+                "url": "",
+                "credit": {
+                    "name": "",
+                    "url": ""
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+<h2>Rockets</h2>
+<div class="rockets">
+  <div class="rocket" *ngFor="let rocket of rockets">
+    <div>
+      <h4>
+        <a routerLink="/rocket/{{rocket.id}}">{{rocket.name}}</a>
+      </h4>
+      <div class="rocket-body">
+        <div class="spec">
+          <label>LEO</label> {{rocket.config[0].leo}}
+        </div>
+        <div class="spec">
+          <label>GTO</label> {{rocket.config[0].gto}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

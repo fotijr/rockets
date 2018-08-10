@@ -1,0 +1,22 @@
+div.spec > label {
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.rocket {
+    display: inline-block;
+    margin: 0 15px 15px 0;
+    border: 1px solid #000;
+}
+
+.rocket h4 {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 20px 15px;
+}
+
+.rocket a {
+    text-decoration: none;
+    color: #fff;
+}

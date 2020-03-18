@@ -5,7 +5,7 @@ import { RocketService } from '../rocket.service';
 @Component({
   selector: 'app-rockets',
   templateUrl: './rockets.component.html',
-  styleUrls: ['./rockets.component.css']
+  styleUrls: ['./rockets.component.scss']
 })
 export class RocketsComponent implements OnInit {
   rockets: Rocket[];

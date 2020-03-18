@@ -1,0 +1,47 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  flex-grow: 1;
+}
+
+.controls {
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1em;
+}
+
+$earth-horizontal-overhang: 200px;
+#visualizer {
+  position: absolute;
+  bottom: 0;
+  margin-left: -$earth-horizontal-overhang;
+  width: calc(100vw + #{$earth-horizontal-overhang});
+}
+
+#stars {
+  position: relative;
+  min-height: 200px;
+}
+
+.star {
+  position: absolute;
+  background-color: #fff;
+  height: 1px;
+  width: 1px;
+
+  @for $i from 1 through 23 {
+    &:nth-child(#{$i}) {
+      top: percentage(random(90) / 100);
+      left: percentage(random(100) / 100);
+    }
+  }
+}
+
+$earth-height: 275px;
+#earth {
+  background-color: blue;
+  border-radius: 45%;
+  min-height: $earth-height;
+  margin-bottom: $earth-height * -0.43;
+}

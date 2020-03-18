@@ -1,7 +1,6 @@
 nav {
   background-color: #000;
   color: #fff;
-  margin-right: 40px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -49,5 +48,4 @@ div.app-content {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding-bottom: 40px;
 }

@@ -1,39 +1,43 @@
-div.spec > label {
-    font-weight: bold;
-    margin-right: 3px;
+:host {
+  padding: 0 35px 35px 35px;
 }
 
-.spec > span{
-    min-width: 85px;
-    text-align: right;
-    display: inline-block;
+div.spec>label {
+  font-weight: bold;
+  margin-right: 3px;
 }
 
-span.unit{
-    color: gray;
+.spec>span {
+  min-width: 85px;
+  text-align: right;
+  display: inline-block;
+}
+
+span.unit {
+  color: gray;
 }
 
 .rocket {
-    display: inline-block;
-    margin: 0 15px 15px 0;
-    border: 1px solid #000;
-    background-color: #fff;
+  display: inline-block;
+  margin: 0 15px 15px 0;
+  border: 1px solid #000;
+  background-color: #fff;
 }
 
 .rocket h4 {
-    background-color: #000;
-    color: #fff;
-    margin: 0;
-    padding: 20px 15px;
-    letter-spacing: 1.5px;
-    text-align: center;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 20px 15px;
+  letter-spacing: 1.5px;
+  text-align: center;
 }
 
 .rocket a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .rocket-body {
-    padding: 10px;
+  padding: 10px;
 }

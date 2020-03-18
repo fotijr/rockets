@@ -8,18 +8,16 @@ import { catchError, map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class RocketService {
-  private rocketsUrl = '/assets/rockets.json'; // URL to web api
+  private readonly rocketsUrl = '/assets/rockets.json';
 
   constructor(private http: HttpClient) { }
 
-  getRockets(): Observable<Rocket[]> {
-    return this.http
-    .get<any>(this.rocketsUrl)
-    .pipe(map(data => <Rocket[]>data.rockets), catchError(this.handleError));
-  }
-
-  private handleError(res: HttpErrorResponse | any) {
-    console.error(res.error || res.body.error);
-    return observableThrowError(res.error || 'Server error');
+  /**
+   * Gets all rockets
+   */
+  async getRockets(): Promise<Rocket[]> {
+    const data = await this.http
+      .get<{ rockets: Rocket[] }>(this.rocketsUrl).toPromise();
+    return data.rockets;
   }
 }

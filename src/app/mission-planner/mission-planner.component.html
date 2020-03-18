@@ -1,9 +1,7 @@
 <div class="controls">
   <label for="launcher">Launcher:</label>
-
-  <select name="launcher" id="launcher">
-    <option value="">--Please select a launcher</option>
-    <option value="a">Option A</option>
+  <select [(ngModel)]="rocket" name="launcher" id="launcher">
+    <option *ngFor="let r of rockets" [ngValue]="r">{{r.name}}</option>
   </select>
 
   <label for="payload">Payload Size</label>

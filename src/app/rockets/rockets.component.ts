@@ -12,13 +12,8 @@ export class RocketsComponent implements OnInit {
 
   constructor(private rocketService: RocketService) { }
 
-  getRockets(): void {
-    this.rocketService
-      .getRockets()
-      .subscribe(
-        rockets => (this.rockets = rockets)
-        // error => (this.error = error)
-      )
+  async getRockets() {
+    this.rockets = await this.rocketService.getRockets();
   }
 
   ngOnInit() {

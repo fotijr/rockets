@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Rocket } from '../rocket';
+import { Rocket } from '../models';
 import { RocketService } from '../rocket.service';
 
 @Component({

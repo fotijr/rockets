@@ -56,8 +56,8 @@
             }
         },
         {
-            "id": "delta-iv",
-            "name": "Delta IV",
+            "id": "delta-iv-heavy",
+            "name": "Delta IV Heavy",
             "operator": "ULA",
             "fuel": "LH₂ / LOX",
             "config": [
@@ -88,6 +88,26 @@
                 "credit": {
                     "name": "",
                     "url": ""
+                }
+            }
+        },
+        {
+            "id": "new-glenn",
+            "name": "New Glenn",
+            "operator": "Blue Origin",
+            "fuel": "LNG / LOX",
+            "config": [
+                {
+                    "name": "reusable",
+                    "leo": 45000,
+                    "gto": 13000
+                }
+            ],
+            "img": {
+                "url": "/assets/img/new-glenn.jpg",
+                "credit": {
+                    "name": "Blue Origin",
+                    "url": "https://www.blueorigin.com"
                 }
             }
         },

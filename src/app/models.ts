@@ -8,8 +8,15 @@ export class RocketConfig {
 }
 
 export interface Image {
+    /** Image source URL */
     url: string;
-    credit: any;
+    /** Image photo credit */
+    credit: {
+        /** Photographer name */
+        name: string;
+        /** Photo URL credit */
+        url: string;
+    };
 }
 
 export interface Rocket {

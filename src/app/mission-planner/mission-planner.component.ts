@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mission-planner.component.scss']
 })
 export class MissionPlannerComponent implements OnInit {
+  payloadWeight: number = 0;
+  targetOrbit: number = 0;
 
   constructor() { }
 

@@ -7,10 +7,16 @@
   </select>
 
   <label for="payload">Payload Size</label>
-  <input type="range" id="payload" name="payload" min="0" max="20000">
+  <input type="range" id="payload" name="payload" min="0" max="20000" [(ngModel)]="payloadWeight">
 
   <label for="orbit">Target Orbit</label>
-  <input type="range" id="orbit" name="orbit" min="0" max="50000">
+  <input type="range" id="orbit" name="orbit" min="0" max="50000" [(ngModel)]="targetOrbit">
+  <div>
+    <span>Payload {{ payloadWeight | number }} kg</span>
+  </div>
+  <div>
+    <span>Orbit {{ targetOrbit | number }} km</span>
+  </div>
 </div>
 
 <div id="visualizer">

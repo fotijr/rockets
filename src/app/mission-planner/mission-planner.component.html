@@ -43,5 +43,13 @@
     <div class="star"></div>
     <div class="star"></div>
   </div>
-  <div id="earth"></div>
+  <div class="orbital-objects">
+    <rkt-orbit-plot [orbit]="150" [planetSize]="250"></rkt-orbit-plot>
+    <rkt-orbit-plot [orbit]="100" [planetSize]="250"></rkt-orbit-plot>
+    <div id="earth">
+      <div class="current-location">
+        📍 You are here.
+      </div>
+    </div>
+  </div>
 </div>

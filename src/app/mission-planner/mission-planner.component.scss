@@ -12,6 +12,7 @@
 }
 
 $earth-horizontal-overhang: 200px;
+
 #visualizer {
   position: absolute;
   bottom: 0;
@@ -21,7 +22,7 @@ $earth-horizontal-overhang: 200px;
 
 #stars {
   position: relative;
-  min-height: 200px;
+  height: calc(100vh - 200px);
 }
 
 .star {
@@ -38,10 +39,41 @@ $earth-horizontal-overhang: 200px;
   }
 }
 
+$orbital-radius: 50%;
 $earth-height: 275px;
+
+.orbital-objects {
+  position: relative;
+
+  $pi: 3.14159265358979;
+  $one-orbit: 50px;
+
+  .orbit {
+    position: absolute;
+    top: -$one-orbit;
+    left: -($one-orbit * $pi);
+    right: -($one-orbit * $pi);
+    border-radius: $orbital-radius;
+    border: 1px dashed gray;
+    bottom: ($earth-height * -0.43) - $one-orbit;
+  }
+}
+
 #earth {
   background-color: blue;
-  border-radius: 45%;
-  min-height: $earth-height;
+  border-radius: $orbital-radius;
+  height: $earth-height;
   margin-bottom: $earth-height * -0.43;
+
+  .current-location {
+    display: none;
+  }
+
+  &:hover {
+    .current-location {
+      display: block;
+      color: #fff;
+      margin-left: 50%;
+    }
+  }
 }

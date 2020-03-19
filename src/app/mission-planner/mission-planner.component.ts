@@ -3,7 +3,7 @@ import { Rocket } from '../models';
 import { RocketService } from '../rocket.service';
 
 @Component({
-  selector: 'app-mission-planner',
+  selector: 'rkt-mission-planner',
   templateUrl: './mission-planner.component.html',
   styleUrls: ['./mission-planner.component.scss']
 })

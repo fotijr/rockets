@@ -1,14 +1,37 @@
 <div class="controls">
-  <label for="launcher">Launcher:</label>
+  <!-- <label for="launcher">Launcher:</label>
   <select [(ngModel)]="rocket" name="launcher" id="launcher">
     <option *ngFor="let r of rockets" [ngValue]="r">{{r.name}}</option>
-  </select>
+  </select> -->
 
   <label for="payload">Payload Size</label>
   <input type="range" id="payload" name="payload" min="0" max="20000" [(ngModel)]="payloadWeight">
 
   <label for="orbit">Target Orbit</label>
-  <input type="range" id="orbit" name="orbit" min="0" max="50000" [(ngModel)]="targetOrbit">
+  <input type="range" id="orbit" name="orbit" min="160" max="200000" [(ngModel)]="targetOrbit" list="tickmarks">
+  <datalist id="tickmarks">
+    <option value="160" label="LEO"></option>
+    <option value="250"></option>
+    <option value="400"></option>
+    <option value="1000"></option>
+    <option value="1500"></option>
+    <option value="2000" label="MEO"></option>
+    <option value="3000"></option>
+    <option value="5000"></option>
+    <option value="7000"></option>
+    <option value="10000"></option>
+    <option value="15000"></option>
+    <option value="18368" label="GTO"></option>
+    <option value="25000"></option>
+    <option value="35786" label="GEO"></option>
+
+    <option value="50000"></option>
+    <option value="75000"></option>
+    <option value="100000"></option>
+    <option value="125000"></option>
+    <option value="150000"></option>
+    <option value="175000"></option>
+  </datalist>
   <div>
     <span>Payload {{ payloadWeight | number }} kg</span>
   </div>
@@ -43,5 +66,14 @@
     <div class="star"></div>
     <div class="star"></div>
   </div>
-  <div id="earth"></div>
+  <div class="orbital-objects">
+    <rkt-orbit-plot *ngIf="targetOrbit > 0" [orbit]="targetOrbit" [planetSize]="250"></rkt-orbit-plot>
+    <rkt-orbit-plot [orbit]="2000" [planetSize]="250"></rkt-orbit-plot>
+    <rkt-orbit-plot [orbit]="160" [planetSize]="250"></rkt-orbit-plot>
+    <div id="earth">
+      <div class="current-location">
+        📍 You are here.
+      </div>
+    </div>
+  </div>
 </div>

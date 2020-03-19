@@ -1,0 +1,19 @@
+:host {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px dashed gray;
+
+  &:hover {
+    border-width: 2px;
+
+    div.label{
+        display: block;
+    }
+  }
+}
+
+div.label {
+    display: none;
+    margin-left: 50%;
+    color: #fff;
+}

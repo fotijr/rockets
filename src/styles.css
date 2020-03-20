@@ -1,15 +1,28 @@
 @font-face {
-    font-family: righteous;
-    src: url(/assets/Righteous-Regular.ttf);
+  font-family: righteous;
+  src: url(/assets/Righteous-Regular.ttf);
 }
 
 
-body{
-    font-family: righteous, cursive;
-    margin: 0;
-    background: linear-gradient(to left, transparent, #FFF), url(/assets/shuttle-medium.png);
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: 20vmin auto;
-    min-height: 100vh;
+body {
+  font-family: righteous, cursive;
+  margin: 0;
+  background: linear-gradient(to left, transparent, #FFF), url(/assets/shuttle-medium.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 20vmin auto;
+  min-height: 100vh;
+}
+
+.col,
+.row {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
 }

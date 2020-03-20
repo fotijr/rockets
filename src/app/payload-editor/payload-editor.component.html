@@ -1,0 +1,2 @@
+<label for="payload">Payload Size</label>
+<input #payloadSlider type="range" id="payload" name="payload" min="0" max="20000" (input)="payloadUpdated($event.target.valueAsNumber)">

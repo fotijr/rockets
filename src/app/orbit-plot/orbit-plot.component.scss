@@ -29,5 +29,10 @@ div.label {
 
   span {
     visibility: hidden;
+
+    &.orbit-name {
+      color: inherit;
+      display: block;
+    }
   }
 }

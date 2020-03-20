@@ -49,7 +49,7 @@
     <div class="star"></div>
   </div>
   <div class="orbital-objects">
-    <rkt-orbit-plot *ngFor="let orbit of allOrbits" [orbit]="orbit.altitude" [planetSize]="250" [img]="orbit.img"
+    <rkt-orbit-plot *ngFor="let orbit of allOrbits" [orbit]="orbit" [planetSize]="250"
       [style.color]="orbit.color || 'gray'">
     </rkt-orbit-plot>
     <div id="earth">

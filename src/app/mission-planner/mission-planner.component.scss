@@ -42,6 +42,7 @@ $control-background: rgba(255, 255, 255, 0.9);
     flex-direction: column;
     flex-grow: 1;
     background-color: $control-background;
+    padding-right: 20px;
   }
 
   .plan-summary {
@@ -57,7 +58,6 @@ $control-background: rgba(255, 255, 255, 0.9);
       padding-right: 5px;
     }
   }
-
 }
 
 $earth-horizontal-overhang: 200px;

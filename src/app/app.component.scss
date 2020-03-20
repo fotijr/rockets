@@ -8,6 +8,10 @@ nav {
   max-width: 130px;
   padding: 10px 20px;
   min-height: 100vh;
+
+  .nav-link {
+    z-index: 99999999;
+  }
 }
 
 @media only screen and (max-width: 520px) {

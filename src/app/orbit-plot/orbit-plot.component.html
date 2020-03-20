@@ -1,0 +1,7 @@
+<div class="label">
+    <img *ngIf="orbit.img" [src]="orbit.img" />
+    <div class="text-holder">
+        <span>{{ orbit.altitude | number }}km</span>
+        <span class="orbit-name" [style.color]="orbit.color">{{ orbit.name }}</span>
+    </div>
+</div>

@@ -7,13 +7,17 @@ import { RocketsComponent } from './rockets/rockets.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { MissionPlannerComponent } from './mission-planner/mission-planner.component';
 import { OrbitPlotComponent } from './orbit-plot/orbit-plot.component';
+import { PayloadEditorComponent } from './payload-editor/payload-editor.component';
+import { OrbitEditorComponent } from './orbit-editor/orbit-editor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RocketsComponent,
     MissionPlannerComponent,
-    OrbitPlotComponent
+    OrbitPlotComponent,
+    PayloadEditorComponent,
+    OrbitEditorComponent
   ],
   imports: [
     BrowserModule,

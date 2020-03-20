@@ -1,0 +1,7 @@
+:host {
+  display: flex;
+}
+
+input[type="range"] {
+  flex-grow: 1;
+}

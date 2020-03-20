@@ -26,3 +26,12 @@ export interface Rocket {
     img: Image;
 }
 
+export interface Orbit {
+    /** Orbit altitude in km */
+    altitude: number;
+    name: string;
+    /** Source of image to show on orbit label */
+    img?: string;
+    /** Set rendered orbit color */
+    color?: string;
+}

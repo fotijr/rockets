@@ -1,19 +1,38 @@
 :host {
   position: absolute;
   border-radius: 50%;
-  border: 1px dashed gray;
+  border: 1px dashed currentColor;
 
   &:hover {
     border-width: 2px;
 
-    div.label{
-        display: block;
+    div.label {
+      span {
+        visibility: visible;
+      }
     }
   }
 }
 
 div.label {
-    display: none;
-    margin-left: 50%;
-    color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  color: #fff;
+  margin-top: -20px;
+
+  img {
+    max-height: 50px;
+    margin-right: 10px;
+  }
+
+  span {
+    visibility: hidden;
+
+    &.orbit-name {
+      color: inherit;
+      display: block;
+    }
+  }
 }

@@ -1,20 +1,10 @@
 # Rockets [![Netlify Status](https://api.netlify.com/api/v1/badges/b50ac369-3f63-4d6d-8089-ae69b804d781/deploy-status)](https://app.netlify.com/sites/rockets-fotijr/deploys)
-A demo Angular app showing awesome rockets. View the site [here](https://rockets.fotijr.com/). Art by [@basicavisual](https://twitter.com/basicavisual).
+An Angular app showing awesome rockets. View the site [here](https://rockets.fotijr.com/). Art by [@basicavisual](https://twitter.com/basicavisual).
 
-
+## TODO
+- [ ] Add "about" page.
+- [ ] Add payload/orbit references.
+- [ ] Add qualifying rockets to mission planner.
 
 ## Development
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `ng serve` and navigate to `http://localhost:4200/`.

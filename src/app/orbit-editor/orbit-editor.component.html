@@ -1,0 +1,25 @@
+<label for="orbit">Target Orbit</label>
+<input type="range" #orbitSlider id="orbit" name="orbit" min="160" max="200000" (input)="orbitUpdated($event.target.valueAsNumber)" list="tickmarks">
+<datalist id="tickmarks">
+    <option value="160" label="LEO"></option>
+    <option value="250"></option>
+    <option value="400"></option>
+    <option value="1000"></option>
+    <option value="1500"></option>
+    <option value="2000" label="MEO"></option>
+    <option value="3000"></option>
+    <option value="5000"></option>
+    <option value="7000"></option>
+    <option value="10000"></option>
+    <option value="15000"></option>
+    <option value="18368" label="GTO"></option>
+    <option value="25000"></option>
+    <option value="35786" label="GEO"></option>
+
+    <option value="50000"></option>
+    <option value="75000"></option>
+    <option value="100000"></option>
+    <option value="125000"></option>
+    <option value="150000"></option>
+    <option value="175000"></option>
+</datalist>

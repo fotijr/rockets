@@ -13,7 +13,7 @@ const routes: Routes = [
     children: [
       { path: 'payload', component: PayloadEditorComponent },
       { path: 'orbit', component: OrbitEditorComponent },
-      { path: '', redirectTo: 'orbit', pathMatch: 'full' },
+      { path: '', redirectTo: 'payload', pathMatch: 'full' },
     ]
   }
 ];

@@ -32,4 +32,6 @@ export interface Orbit {
     name: string;
     /** Source of image to show on orbit label */
     img?: string;
+    /** Set rendered orbit color */
+    color?: string;
 }

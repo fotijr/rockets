@@ -16,15 +16,15 @@ export class MissionPlannerComponent implements OnInit {
   payloadWeight: number = 0;
   targetOrbit: number;
   orbits: Orbit[] = [
-    { altitude: 160, name: 'LEO' },
-    { altitude: 2000, name: 'MEO' }
+    { altitude: 160, name: 'LEO', color: 'gray' },
+    { altitude: 2000, name: 'MEO', color: 'gray' }
   ];
 
   /** All orbits, including target orbit */
   get allOrbits(): Orbit[] {
     const orbits = [...this.orbits];
     if (this.targetOrbit > 0) {
-      orbits.push({ name: 'Target', altitude: this.targetOrbit, img: 'assets/img/satellite.png' });
+      orbits.push({ name: 'Target', altitude: this.targetOrbit, img: 'assets/img/satellite.png', color: 'deepskyblue' });
     }
     orbits.sort((a, b) => (a.altitude < b.altitude) ? 1 : -1);
     this.setKmToPixelScale(orbits);
@@ -35,7 +35,6 @@ export class MissionPlannerComponent implements OnInit {
 
   constructor(private rocketService: RocketService, private plannerService: MissionPlannerService) {
     this.plannerService.orbit.subscribe(orbit => {
-      console.log('orbit', orbit);
       this.targetOrbit = orbit;
     });
 

@@ -1,3 +1,5 @@
+@import '../styles/var.scss';
+
 nav {
   background-color: #000;
   color: #fff;
@@ -11,6 +13,21 @@ nav {
 
   .nav-link {
     z-index: 99999999;
+    font-family: righteous, cursive;
+    margin-bottom: 15px;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 5px 4px 2px $yellow;
+    }
+
+    &.active {
+      box-shadow: 5px 4px 2px $red;
+    }
   }
 }
 
@@ -33,11 +50,6 @@ nav a {
   padding: 15px 10px;
   text-decoration: none;
   display: block;
-  margin-bottom: 15px;
-}
-
-nav a:hover {
-  box-shadow: 5px 4px 2px #bc5a58;
 }
 
 div.app-container {

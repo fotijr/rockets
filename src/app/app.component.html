@@ -1,11 +1,12 @@
 <div class="app-container">
   <nav>
-    <h3 routerLink="/">ROCKETS</h3>
-    <div class="nav-link">
-      <a href="/rockets" title="Browse all rockets">Browse</a>
+    <h3 class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+      true}">ROCKETS</h3>
+    <div class="nav-link" routerLink="/rockets" routerLinkActive="active">
+      <a title="Browse all rockets">Browse</a>
     </div>
-    <div class="nav-link">
-      <a href="/mission-planner" title="Interactive mission planner">Mission Planner</a>
+    <div class="nav-link" routerLink="/mission-planner" routerLinkActive="active">
+      <a title="Interactive mission planner">Mission Planner</a>
     </div>
   </nav>
   <div class="app-content">

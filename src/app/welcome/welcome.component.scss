@@ -1,0 +1,32 @@
+@import '../../styles/var.scss';
+
+:host {
+  padding: 10px 30px;
+  font-size: 20px;
+  max-width: 900px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h2{
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+p,ul {
+  font-weight: 300;
+  line-height: 1.2em;
+}
+
+li{
+  font-size: 0.8em;
+  margin-bottom: 0.2em;
+}
+
+em {
+  color: $gray;
+  font-size: 0.5em;
+  margin-bottom: 2em;
+}

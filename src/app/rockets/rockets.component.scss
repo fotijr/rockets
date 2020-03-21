@@ -1,5 +1,8 @@
+@import '../../styles/var.scss';
+
 :host {
   padding: 0 35px 35px 35px;
+  font-family: righteous, cursive;
 }
 
 div.spec>label {
@@ -14,7 +17,7 @@ div.spec>label {
 }
 
 span.unit {
-  color: gray;
+  color: $gray;
 }
 
 .rocket {

@@ -16,6 +16,7 @@ export class PayloadEditorComponent implements OnInit {
     { name: 'Airstream Trailer', value: 3533 },
     { name: 'Cassini', value: 5712 },
     { name: 'Hubble', value: 10886 },
+    { name: 'Crew Dragon', value: 12055 },
     { name: 'Tractor Trailer', value: 15876 }
   ]
 

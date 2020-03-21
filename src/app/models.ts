@@ -35,3 +35,13 @@ export interface Orbit {
     /** Set rendered orbit color */
     color?: string;
 }
+
+/**
+ * A reference used for familiar comparisons when setting a value
+ */
+export interface UnitReference {
+    /** Reference name */
+    name: string;
+    /** Reference value */
+    value: number;
+}

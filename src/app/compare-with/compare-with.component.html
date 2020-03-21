@@ -1,0 +1,7 @@
+<span>Compare with:</span>
+<div class="references">
+    <div class="reference" *ngFor="let ref of references" (click)="referenceClicked(ref.value)">
+        <span>{{ ref.name }}</span>
+        <span>{{ ref.value | number }}{{ unit }}</span>
+    </div>
+</div>

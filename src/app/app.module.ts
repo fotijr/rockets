@@ -9,6 +9,9 @@ import { MissionPlannerComponent } from './mission-planner/mission-planner.compo
 import { OrbitPlotComponent } from './orbit-plot/orbit-plot.component';
 import { PayloadEditorComponent } from './payload-editor/payload-editor.component';
 import { OrbitEditorComponent } from './orbit-editor/orbit-editor.component';
+import { CompareWithComponent } from './compare-with/compare-with.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { LauncherSelectorComponent } from './launcher-selector/launcher-selector.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { OrbitEditorComponent } from './orbit-editor/orbit-editor.component';
     MissionPlannerComponent,
     OrbitPlotComponent,
     PayloadEditorComponent,
-    OrbitEditorComponent
+    OrbitEditorComponent,
+    CompareWithComponent,
+    WelcomeComponent,
+    LauncherSelectorComponent
   ],
   imports: [
     BrowserModule,

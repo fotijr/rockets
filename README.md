@@ -2,9 +2,10 @@
 An Angular app showing awesome rockets. View the site [here](https://rockets.fotijr.com/). Art by [@basicavisual](https://twitter.com/basicavisual).
 
 ## TODO
-- [ ] Add "about" page.
-- [ ] Add payload/orbit references.
 - [ ] Add qualifying rockets to mission planner.
+- [ ] Fix ugly mission planner UX.
+- [ ] Make navbar responsive.
+- [ ] Make rocket gallery responsive.
 
 ## Development
 Run `ng serve` and navigate to `http://localhost:4200/`.

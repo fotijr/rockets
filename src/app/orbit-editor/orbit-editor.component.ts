@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { MissionPlannerService } from '../mission-planner.service';
+import { UnitReference } from '../models';
 
 @Component({
   selector: 'rkt-orbit-editor',
@@ -9,6 +10,11 @@ import { MissionPlannerService } from '../mission-planner.service';
 export class OrbitEditorComponent implements OnInit {
   @Input() targetOrbit: number;
   @ViewChild('orbitSlider', { static: true }) orbitSlider: ElementRef<HTMLInputElement>;
+  references: UnitReference[] = [
+    { name: 'ISS', value: 409 },
+    { name: 'Hubble', value: 568 },
+    { name: 'GPS', value: 202000 }
+  ]
 
   constructor(private plannerService: MissionPlannerService) { }
 

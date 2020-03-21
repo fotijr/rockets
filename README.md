@@ -5,6 +5,7 @@ An Angular app showing awesome rockets. View the site [here](https://rockets.fot
 - [ ] Add "about" page.
 - [ ] Add payload/orbit references.
 - [ ] Add qualifying rockets to mission planner.
+- [ ] Fix the font. Why is the font so bad???
 
 ## Development
 Run `ng serve` and navigate to `http://localhost:4200/`.

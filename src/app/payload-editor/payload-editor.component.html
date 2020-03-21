@@ -1,2 +1,8 @@
-<label for="payload">Payload Size</label>
-<input #payloadSlider type="range" id="payload" name="payload" min="0" max="20000" (input)="payloadUpdated($event.target.valueAsNumber)">
+<div class="row">
+    <label for="payload">Payload Size</label>
+    <input #payloadSlider type="range" id="payload" name="payload" min="0" max="20000"
+        (input)="payloadUpdated($event.target.valueAsNumber)">
+</div>
+<div class="row">
+    <rkt-compare-with [references]="references" (referenceSelected)="payloadUpdated($event)"></rkt-compare-with>
+</div>
